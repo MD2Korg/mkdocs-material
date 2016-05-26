@@ -2,8 +2,13 @@
 <nav aria-label="Navigation">
   {% set home = repo_url | default("/", true) %}
 
+  <!-- MD2K Name and logo -->
+  <a href="http://md2k.org"><div class="MD2Kbanner"></div></a>
+
+
   <!-- Project information -->
   <a href="{{ home }}" class="project">
+
 
     <!-- Name and logo -->
     <div class="banner">
@@ -69,7 +74,7 @@
         <!-- Author-related links -->
         {% if config.extra.author %}
           <hr />
-          <span class="section">The author</span>
+          <span class="section">Additional information</span>
           <ul>
 
             <!-- Twitter -->
@@ -96,6 +101,9 @@
           </ul>
         {% endif %}
       </div>
+      <span class="section">MD2K is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant #1U54EB020404</span>
+      <span class="section">Team: Cornell Tech, GA Tech, U Memphis, Northwestern, Ohio State, Open mHealth, Rice, UCLA, UCSD, UCSF, U Mass, U Michigan, WVU</span>
+
     </div>
   </div>
 </nav>
